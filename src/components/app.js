@@ -1,9 +1,14 @@
-import React, { Component } from 'react';
+import React, { PropTypes } from 'react';
+import UserList from '../containers/UserList';
+import UserDetail from '../containers/UserDetail';
 
-export default class App extends Component {
-  render() {
+const App = () => {
     return (
-      <div>React simple starter</div>
+        <div>
+            <UserList/>
+            <UserDetail/>
+        </div>
     );
-  }
-}
+};
+
+export default App;
